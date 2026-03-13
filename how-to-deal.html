@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberAware NSW | How to Deal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        .tail-container {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://picsum.photos/id/1015/1920/1080');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .step-number {
+            font-size: 4rem;
+            line-height: 1;
+            font-weight: 700;
+            color: #0ea5e9;
+            opacity: 0.15;
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #0ea5e9;
+            transform: translateY(-2px);
+        }
+        
+        .step-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .step-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(14 165 233 / 0.25);
+        }
+    </style>
+</head>
+<body class="tail-container bg-slate-950 text-slate-200">
+    <!-- NAVBAR -->
+    <nav class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-sky-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">🛡️</div>
+                <div>
+                    <span class="text-2xl font-bold tracking-tighter text-white">CyberAware</span>
+                    <span class="text-sky-400 text-sm font-medium block -mt-1">NSW</span>
+                </div>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="what-is.html" class="nav-link">What is Cyberbullying?</a>
+                <a href="how-happens.html" class="nav-link">How It Happens</a>
+                <a href="impacts.html" class="nav-link">The Impacts</a>
+                <a href="how-to-deal.html" class="nav-link text-sky-400">How to Deal</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <a href="resources.html" 
+               class="hidden md:block bg-sky-500 hover:bg-sky-600 text-white px-6 py-2.5 rounded-2xl font-semibold text-sm transition-all">
+                Get Help Now
+            </a>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
+            <div class="px-6 py-6 flex flex-col gap-6 text-lg">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="what-is.html" class="nav-link">What is Cyberbullying?</a>
+                <a href="how-happens.html" class="nav-link">How It Happens</a>
+                <a href="impacts.html" class="nav-link">The Impacts</a>
+                <a href="how-to-deal.html" class="nav-link">How to Deal</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="resources.html" class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-2xl font-semibold text-center">Get Help Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center z-10">
+            <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-3 rounded-3xl text-sm font-medium mb-8">
+                <span class="text-emerald-400 text-xl">🛡️</span>
+                OFFICIAL eSAFETY STEPS
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter mb-6">
+                How to <span class="text-emerald-400">Deal</span><br>with Cyberbullying
+            </h1>
+            
+            <p class="text-2xl text-slate-300 max-w-2xl mx-auto">
+                6 proven steps from the eSafety Commissioner. 
+                <span class="text-white font-semibold">You are not powerless.</span>
+            </p>
+            
+            <div class="mt-12">
+                <a href="#steps" 
+                   class="inline-flex items-center gap-4 bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-5 rounded-3xl font-semibold text-lg transition-all">
+                    START HERE
+                    <i class="fas fa-arrow-down text-xl"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Floating shield -->
+        <div class="absolute bottom-20 right-10 hidden lg:block text-[180px] opacity-10">🛡️</div>
+    </header>
+
+    <!-- WHY THESE STEPS WORK -->
+    <section class="py-20 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="max-w-2xl mx-auto">
+                <span class="px-5 py-2 bg-emerald-900/50 text-emerald-400 text-xs font-semibold rounded-full">FROM THE EXPERTS</span>
+                <h2 class="text-4xl font-bold mt-6">Why these steps actually work</h2>
+                <p class="text-slate-400 mt-6 text-lg">
+                    The eSafety Commissioner created these steps because they stop the bullying fast, protect your mental health, 
+                    and give you back control — all while keeping evidence for serious cases.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE 6 STEPS -->
+    <section id="steps" class="py-20 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-emerald-400 text-sm font-semibold tracking-widest">6 POWERFUL STEPS FROM THE E-SAFETY COMMISIONER</span>
+                <h2 class="text-5xl font-bold mt-3">Take back control — step by step</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- Step 1 -->
+                <div class="step-card bg-slate-900 border border-slate-700 rounded-3xl p-10 group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="step-number">01</span>
+                            <div class="text-3xl font-semibold mt-2">Stay calm & don’t respond</div>
+                        </div>
+                        <div class="text-5xl">😌</div>
+                    </div>
+                    <div class="mt-8 space-y-6 text-slate-300">
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Avoid replying — even with anger. It gives the bully what they want.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Take a break from the screen. Go for a walk, breathe, talk to someone offline.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Use mute, hide, or ignore tools inside the app.</div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-slate-700 text-xs text-emerald-400 font-medium">
+                        REMEMBER: Their words say more about them than about you.
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card bg-slate-900 border border-slate-700 rounded-3xl p-10 group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="step-number">02</span>
+                            <div class="text-3xl font-semibold mt-2">Tell someone you trust</div>
+                        </div>
+                        <div class="text-5xl">🗣️</div>
+                    </div>
+                    <div class="mt-8 space-y-6 text-slate-300">
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Talk to a parent, teacher, older sibling, school counsellor, or family member.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>They can help you decide next steps and support you emotionally.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>You don’t have to handle this alone — support makes everything easier.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card bg-slate-900 border border-slate-700 rounded-3xl p-10 group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="step-number">03</span>
+                            <div class="text-3xl font-semibold mt-2">Collect evidence</div>
+                        </div>
+                        <div class="text-5xl">📸</div>
+                    </div>
+                    <div class="mt-8 space-y-6 text-slate-300">
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Take screenshots of EVERYTHING — messages, posts, usernames, dates, times.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Save links and record how long it’s been happening.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Store it somewhere safe (Google Drive, photos app, or USB).</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-xs text-slate-400">This evidence is gold if you need to report it later.</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card bg-slate-900 border border-slate-700 rounded-3xl p-10 group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="step-number">04</span>
+                            <div class="text-3xl font-semibold mt-2">Report it</div>
+                        </div>
+                        <div class="text-5xl">🚨</div>
+                    </div>
+                    <div class="mt-8 space-y-6 text-slate-300">
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>First: Report inside the app/platform (Instagram, TikTok, Snapchat, etc.).</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>In Australia: Report serious cases to the eSafety Commissioner at esafety.gov.au</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>They can force platforms to remove content — even from overseas.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step-card bg-slate-900 border border-slate-700 rounded-3xl p-10 group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="step-number">05</span>
+                            <div class="text-3xl font-semibold mt-2">Block & protect yourself</div>
+                        </div>
+                        <div class="text-5xl">🚫</div>
+                    </div>
+                    <div class="mt-8 space-y-6 text-slate-300">
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Block the person on every platform immediately after reporting.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Turn on privacy settings: private account, limit DMs, hide stories.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Don’t accept new friend requests from strangers right now.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step-card bg-slate-900 border border-slate-700 rounded-3xl p-10 group">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="step-number">06</span>
+                            <div class="text-3xl font-semibold mt-2">Look after yourself</div>
+                        </div>
+                        <div class="text-5xl">❤️</div>
+                    </div>
+                    <div class="mt-8 space-y-6 text-slate-300">
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Do things that make you feel good — sport, music, friends, hobbies.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Talk to a counsellor if you’re feeling anxious, sad or unsafe.</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="fas fa-check text-emerald-400 mt-1"></i>
+                            <div>Remember: This is not your fault. You are strong and you will get through this.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMERGENCY HELP -->
+    <section class="py-20 bg-gradient-to-br from-emerald-950 to-slate-950">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-slate-900 rounded-3xl p-12 md:p-16 text-center">
+                <div class="text-6xl mb-6">🚨</div>
+                <h2 class="text-4xl font-bold mb-4">Need help right now?</h2>
+                <p class="text-xl text-slate-300 max-w-lg mx-auto">You are not alone. These services are free, confidential, and 24/7.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- Kids Helpline -->
+                    <a href="https://kidshelpline.com.au/" target="_blank" 
+                       class="group bg-slate-800 hover:bg-slate-700 border border-emerald-500/30 rounded-3xl p-8 transition-all">
+                        <div class="text-4xl mb-4">📞</div>
+                        <div class="font-semibold text-xl mb-1">Kids Helpline</div>
+                        <div class="text-emerald-400 text-3xl font-bold">1800 55 1800</div>
+                        <div class="text-sm text-slate-400 mt-6">5–25 years • Phone, webchat or app</div>
+                        <div class="text-xs text-emerald-400 mt-8 group-hover:underline">kidshelpline.com.au →</div>
+                    </a>
+                    
+                    <!-- eSafety -->
+                    <a href="https://www.esafety.gov.au/" target="_blank" 
+                       class="group bg-slate-800 hover:bg-slate-700 border border-sky-500/30 rounded-3xl p-8 transition-all">
+                        <div class="text-4xl mb-4">🇦🇺</div>
+                        <div class="font-semibold text-xl mb-1">eSafety Commissioner</div>
+                        <div class="text-sky-400 text-lg font-medium">Report serious cyberbullying</div>
+                        <div class="text-sm text-slate-400 mt-6">They can remove harmful content fast</div>
+                        <div class="text-xs text-sky-400 mt-8 group-hover:underline">esafety.gov.au/report →</div>
+                    </a>
+                    
+                    <!-- Beyond Blue / Lifeline -->
+                    <a href="https://www.beyondblue.org.au/" target="_blank" 
+                       class="group bg-slate-800 hover:bg-slate-700 border border-purple-500/30 rounded-3xl p-8 transition-all">
+                        <div class="text-4xl mb-4">💙</div>
+                        <div class="font-semibold text-xl mb-1">Beyond Blue & Lifeline</div>
+                        <div class="text-purple-400 text-3xl font-bold">13 11 14</div>
+                        <div class="text-sm text-slate-400 mt-6">Anyone • Any time • Mental health support</div>
+                        <div class="text-xs text-purple-400 mt-8 group-hover:underline">beyondblue.org.au →</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- FINAL ENCOURAGEMENT -->
+    <section class="py-20 bg-black">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <div class="text-6xl mb-8">💪</div>
+            <h2 class="text-4xl font-bold mb-6">You’ve got this.</h2>
+            <p class="text-xl text-slate-400">
+                Thousands of NSW teens have faced cyberbullying and come out stronger. 
+                Follow these steps, reach out for help, and remember — the bully loses when you stay strong.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12">
+                <!-- Col 1 -->
+                <div class="md:col-span-4">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-sky-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">🛡️</div>
+                        <div>
+                            <span class="text-2xl font-bold tracking-tighter">CyberAware</span>
+                            <span class="text-sky-400 text-sm font-medium block -mt-1">NSW</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 mt-8 text-xl">
+                        <a href="#" class="hover:text-sky-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-sky-400 transition"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="md:col-span-2">
+                    <div class="font-semibold uppercase text-xs tracking-widest mb-6 text-slate-400">EXPLORE</div>
+                    <div class="space-y-4 text-sm">
+                        <a href="what-is.html" class="footer-link block">What is Cyberbullying?</a>
+                        <a href="how-happens.html" class="footer-link block">How It Happens</a>
+                        <a href="impacts.html" class="footer-link block">The Impacts</a>
+                    </div>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="md:col-span-2">
+                    <div class="font-semibold uppercase text-xs tracking-widest mb-6 text-slate-400">SUPPORT</div>
+                    <div class="space-y-4 text-sm">
+                        <a href="resources.html" class="footer-link block">Resources</a>
+                    </div>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="md:col-span-4">
+                    <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8">
+                        <div class="text-sm font-medium mb-4">Need help right now?</div>
+                        <a href="https://kidshelpline.com.au/" target="_blank"
+                           class="block bg-emerald-600 hover:bg-emerald-500 transition text-white rounded-2xl py-4 px-8 text-center font-semibold mb-4">
+                            Call Kids Helpline: 1800 55 1800
+                        </a>
+                        <div class="text-xs text-slate-400 text-center">
+                            24/7 • Free • Confidential
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-16 pt-8 text-xs text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>© 2026 CyberAware NSW • Student Project for Digital World Awareness</div>
+                <div class="flex gap-6">
+                    <a href="https://www.esafety.gov.au/" target="_blank" class="hover:text-white">eSafety.gov.au</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileBtn.innerHTML = mobileMenu.classList.contains('hidden') 
+                ? '<i class="fas fa-bars"></i>' 
+                : '<i class="fas fa-times"></i>';
+        });
+        
+        // Tailwind config
+        tailwind.config = {
+            content: [],
+            theme: { extend: {} }
+        };
+    </script>
+</body>
+</html>
